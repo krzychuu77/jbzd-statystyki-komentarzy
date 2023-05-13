@@ -1,0 +1,18 @@
+{
+  "name": "JBZD Krzychuscript",
+  "version": "1.0",
+  "description": "Krzychuscript v2",
+  "manifest_version": 2,
+  "permissions": ["activeTab", "storage"],
+  "content_scripts": [{
+    "matches": ["https://jbzd.com.pl/*"],
+    "js": ["contentScript.js"]
+  }],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "JBZD Wtyczka v1",
+    "icons": {
+      "128": "icon.png"
+    }
+  }
+}
