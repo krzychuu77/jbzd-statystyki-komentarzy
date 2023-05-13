@@ -1,4 +1,4 @@
-#krzychu77
+# krzychu77
 
 ugułem jest to wtyczka do przeglądarki na stronę JBZD która dodaje na profilu w karcie komentarzy przycisk "statystyki" po którego kliknięciu na stronie pojawiają się statystyki dotyczące komentarzy wybranego użytkownika.
 
