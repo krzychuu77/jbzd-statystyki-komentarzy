@@ -1,9 +1,9 @@
-# Krzychu77
+#krzychu77
 
-Hello, Im Krzychu77, Im part-time web dev, specialising in JavaScript.
+ugułem jest to wtyczka do przeglądarki na stronę JBZD która dodaje na profilu w karcie komentarzy przycisk "statystyki" po którego kliknięciu na stronie pojawiają się statystyki dotyczące komentarzy wybranego użytkownika.
 
-<div style="display: flex;">  
-  <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
-  <img alt="Html5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/>
-</div>
+jak dodać wtyczkę do przeglądarki:
+trzeba znaleźć opcje "rozszerzenia" i w nie wejść. następnie znaleźć przełącznik i przełaczyć go w tryb programisty.
+na ekranie pojawi się guzik "załaduj rozpakowane" lub coś w tym stylu.
+po kliknięciu należy wybrać folder z kodem JavaScript, manifestem i tymi obrazkami.
+no i powinno śmigać.
