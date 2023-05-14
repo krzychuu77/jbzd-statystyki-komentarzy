@@ -5,6 +5,12 @@ uruchom = async function()
 	if(e){e=700}
 	id = await fetch("https://jbzd.com.pl/search/users?page=1&per_page=12&phrase="+nick).then(r=>r.json())
 	if((((id||{}).values||[])[0]||{}).slug==nick){id=(((id||{}).values||[])[0]||{}).id}else{id=0}
+	if (!id)
+	{
+		nick=((document.getElementsByClassName(`user-name`)[0].innerHTML.match(/\n *(?<nick>.*) *(?:\n)/)||{}).groups||{}).nick||""
+		id = await fetch("https://jbzd.com.pl/search/users?page=1&per_page=12&phrase="+nick).then(r=>r.json())
+		if((((id||{}).values||[])[0]||{}).slug==nick){id=(((id||{}).values||[])[0]||{}).id}else{id=0}
+	}
 	if (!id){return alert("coś poszło nie tak")}
 	pobierz = new Function("nr",`return fetch("https://jbzd.com.pl/comment/user/listing/`+id+`?page="+nr+"&per_page=25",{headers:{"x-requested-with":"XMLHttpRequest"}}).then(r=>r.json())`)
 	ostatniaStrona = await pobierz(1)
